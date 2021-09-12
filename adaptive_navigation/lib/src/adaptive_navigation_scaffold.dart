@@ -388,10 +388,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   void _destinationTapped(AdaptiveScaffoldDestination destination) {
-    final index = destinations.indexOf(destination);
-    if (index != selectedIndex) {
-      onDestinationSelected?.call(index);
-    }
+    onDestinationSelected?.call(index);
   }
 }
 
